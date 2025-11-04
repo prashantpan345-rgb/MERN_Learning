@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ticket Booking</title>
+</head>
+<body>
+  <header>
+    <h1>Online Ticket Booking</h1>
+    <p>Book your tickets for trains, buses, movies, or events easily!</p>
+  </header>
+
+  <nav>
+    <a href="#login">Login/Register</a> |
+    <a href="#booking">Book Ticket</a> |
+    <a href="#confirmation">Confirmation</a>
+  </nav>
+
+  <main>
+    <!-- Login/Register Section -->
+    <section id="login">
+      <h2>Login / Register</h2>
+      <form>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <input type="submit" value="Login">
+        <input type="reset" value="Clear">
+      </form>
+    </section>
+
+    <hr>
+
+    <!-- Booking Section -->
+    <section id="booking">
+      <h2>Book Your Ticket</h2>
+      <form>
+        <label for="type">Select Type:</label>
+        <select id="type" name="type">
+          <option value="train">Train</option>
+          <option value="bus">Bus</option>
+          <option value="movie">Movie</option>
+          <option value="event">Event</option>
+        </select><br><br>
+
+        <label for="from">From:</label>
+        <input type="text" id="from" name="from" required>
+
+        <label for="to">To:</label>
+        <input type="text" id="to" name="to" required><br><br>
+
+        <label for="date">Select Date:</label>
+        <input type="date" id="date" name="date" required><br><br>
+
+        <label for="time">Select Time:</label>
+        <input type="time" id="time" name="time"><br><br>
+
+        <label for="seats">Seat Preference:</label>
+        <select id="seats" name="seats">
+          <option value="window">Window</option>
+          <option value="aisle">Aisle</option>
+          <option value="middle">Middle</option>
+        </select><br><br>
+
+        <input type="submit" value="Book Now">
+      </form>
+    </section>
+
+    <hr>
+
+    <!-- Seat Table Section -->
+    <section id="seat-selection">
+      <h2>Available Seats</h2>
+      <table border="1" cellpadding="8">
+        <tr>
+          <th>Seat No.</th>
+          <th>Status</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Available</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Booked</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Available</td>
+        </tr>
+      </table>
+    </section>
+
+    <hr>
+
+    <!-- Booking Confirmation -->
+    <section id="confirmation">
+      <h2>Booking Confirmation</h2>
+      <p>Your booking details will appear here after confirmation.</p>
+      <aside>
+        <h3>Note:</h3>
+        <p>Please carry a valid ID proof when you travel or attend an event.</p>
+      </aside>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Train_icon.svg/1200px-Train_icon.svg.png" alt="Train Icon" width="100">
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Ticket Booking Website. All rights reserved.</p>
+  </footer>
+</body>
+</html>

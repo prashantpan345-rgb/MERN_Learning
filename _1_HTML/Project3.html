@@ -1,0 +1,72 @@
+<!-- 
+🧠 Mini Project #3 — “User Registration Form”
+
+💻 Goal:
+Create a form that collects:
+✅ Full name
+✅ Email
+✅ Password
+✅ Gender (radio)
+✅ Hobbies (checkboxes)
+✅ Short bio (textarea)
+✅ Submit button
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration Form</title>
+</head>
+<body>
+    <h1>User Registration Form</h1>
+
+    <form action="#" method="post">
+        <!-- Full Name -->
+        <label for="fullname">Full Name:</label><br>
+        <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required><br><br>
+
+        <!-- Email -->
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+
+        <!-- Password -->
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required><br><br>
+
+        <!-- Gender -->
+        <label>Gender:</label><br>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label><br>
+
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br>
+
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">Other</label><br><br>
+
+        <!-- Hobbies -->
+        <label>Hobbies:</label><br>
+        <input type="checkbox" id="hobby1" name="hobbies" value="reading">
+        <label for="hobby1">Reading</label><br>
+
+        <input type="checkbox" id="hobby2" name="hobbies" value="traveling">
+        <label for="hobby2">Traveling</label><br>
+
+        <input type="checkbox" id="hobby3" name="hobbies" value="gaming">
+        <label for="hobby3">Gaming</label><br>
+
+        <input type="checkbox" id="hobby4" name="hobbies" value="cooking">
+        <label for="hobby4">Cooking</label><br><br>
+
+        <!-- Short Bio -->
+        <label for="bio">Short Bio:</label><br>
+        <textarea id="bio" name="bio" placeholder="Tell us about yourself" rows="4" cols="50" required></textarea><br><br>
+
+        <!-- Submit -->
+        <input type="submit" value="Register">
+    </form>
+</body>
+</html>

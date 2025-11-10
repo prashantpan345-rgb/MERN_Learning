@@ -1,0 +1,96 @@
+<!-- 
+🧠 Mini Project #5 — Responsive Resume Page
+
+💻 Goal:
+✅ Header with name & tagline  
+✅ About Me, Education, and Skills sections  
+✅ <progress> for skill levels  
+✅ Contact form with validation  
+✅ Responsive with <meta viewport>  
+✅ Semantic + accessible
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Responsive Resume of Prashant Pandey – Aspiring Data Scientist and Web Developer.">
+    <meta name="keywords" content="Resume, Portfolio, Web Developer, Data Science, HTML, Skills">
+    <meta name="author" content="Prashant Pandey">
+    <title>Prashant Pandey | Resume</title>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Prashant Pandey</h1>
+        <p>Aspiring Data Scientist | Web Developer | Tech Learner</p>
+    </header>
+
+    <!-- About Me Section -->
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <img src="profile.jpg" alt="Profile photo of Prashant Pandey" width="150" height="150">
+            <p>
+                Hello! I’m Prashant Pandey, a passionate learner currently exploring Data Science and Full Stack Development. 
+                I enjoy analyzing data, building useful web projects, and continuously learning new technologies.
+            </p>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education">
+            <h2>Education</h2>
+            <article>
+                <h3>Bachelor of Science in Computer Science</h3>
+                <p><strong>University:</strong> XYZ University</p>
+                <p><strong>Year:</strong> 2021 – 2024</p>
+            </article>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills">
+            <h2>Skills</h2>
+            <p>HTML</p>
+            <progress value="80" max="100">80%</progress><br>
+            
+            <p>CSS</p>
+            <progress value="70" max="100">70%</progress><br>
+            
+            <p>JavaScript</p>
+            <progress value="60" max="100">60%</progress><br>
+            
+            <p>React</p>
+            <progress value="75" max="100">75%</progress><br>
+            
+            <p>Node</p>
+            <progress value="65" max="100">65%</progress>
+        </section>
+
+        <!-- Contact Form -->
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form action="#" method="post">
+                <label for="fullname">Full Name:</label><br>
+                <input type="text" id="fullname" name="fullname" placeholder="Enter your name" required><br><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" placeholder="Write your message here" rows="4" cols="50" required></textarea><br><br>
+
+                <input type="submit" value="Send Message">
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>📧 Contact: <a href="mailto:prashantpandey@email.com">prashantpandey@email.com</a></p>
+        <p>© 2025 Prashant Pandey | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
